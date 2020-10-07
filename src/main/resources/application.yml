@@ -1,0 +1,15 @@
+spring:
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
+
+    datasource: 
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@localhost:1521/xe
+        username: firstweb
+        password: firstweb
+
+mybatis:
+    config-location: classpath:mybatis-config.xml
+    mapper-locations: classpath:mappers/**/*.xml
